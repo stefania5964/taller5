@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Service</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <img src="img/logo.png" alt="Logo">
+    <h1>Log Service</h1>
+</div>
+<div class="container">
+    <form class="form" action="/form">
+        <label for="postname">Descripción:</label><br>
+        <input type="text" id="postname" name="s" value="" placeholder="Ingresa el log" required><br>
+        <input class="btn" type="button" value="Buscar" onclick="loadMsg(postname)">
+    </form>
+    <div class="result" id="getrespmsg"></div>
+</div>
+</body>
+</html>
